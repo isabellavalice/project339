@@ -1,0 +1,142 @@
+body {
+    background-color: #78AB46;
+  
+}
+
+
+h1{
+    font-size: 45px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+p{
+   font-size: 24px;
+   text-align: center;
+}
+nav{
+    background-color: #708090;
+    font-size: auto;
+    text-align: center;
+}
+}
+
+
+/*img{
+    height: 200px;
+    width: inherit;
+    border: 5px black;
+    padding:25px;
+    border-radius: 10px;
+    margin: 10px;
+}
+*/
+
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.gallery > img{
+    width: inherit;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #009fe1
+  }
+
+li{
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+
+li a:hover {
+    background-color: #ffd500;
+}
+
+.menu li.active > a {
+    text-decoration: underline;
+    background-color: #78AB46;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    
+}
+
+
+.photos > img{
+    border: 8px #00FF00 dashed;
+    border-radius: 8px;
+    width: auto;
+    height: auto;
+    opacity: 0.8;
+
+}
+
+.container{
+    display: grid;
+    grid-row-gap: 5px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 400px 400px 400px 400px;
+}
+
+.lakeside-image, .herraduras, .clamlake-image{
+    grid-column: 1 / span 1;
+
+}
+
+.lakeside, .herraduras-image, .clamlake{
+    grid-column: 2 / span 1;
+}
+
+.lakeside-image, .lakeside{
+    grid-row: 1 / span 1;
+}
+
+.herraduras, .herraduras-image{
+    grid-row: 2 / span 1;
+}
+
+.clamlake, .clamlake-image{
+    grid-row: 3 / span 1;
+    overflow: hidden;
+}
+
+.lakeside, .clamlake, .herraduras{
+    border: 20px solid black;
+}
+
+.navitem{
+    color: #008080;
+}
+
+nav a:hover{
+    text-decoration: underline wavy #3B5323	
+}
+
+.skip a{
+    background:black;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  
+    /*Your code here*/
+    position: absolute;
+    top: -40px;
+}
+.skip a:focus{
+    top:0px;
+}
